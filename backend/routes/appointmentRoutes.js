@@ -12,7 +12,6 @@ router.get('/getClassSessions', appointmentController.getClassSessions);
 router.get('/getSessionDetails/:sessionId', appointmentController.getSessionDetails);
 router.put('/updateSession', appointmentController.updateClass);
 
-
 // Protected Dashboard Route
 router.get('/dashboard', authMiddleware, (req, res) => {
     res.status(200).json({ message: 'Authenticated' });
